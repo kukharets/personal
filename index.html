@@ -2,98 +2,52 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css"> 
-    <link rel="stylesheet" href="index.css"> 
-    <link rel="stylesheet" href="fonts.css"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <meta charset="UTF-8">
     <title>Taras Kukharets</title>
-     <script
-          src="https://code.jquery.com/jquery-3.1.0.slim.min.js"
-          integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
-          crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <header>
-        <p>Taras Kukharets</p>
-        <p id="pdown">multilangue junior developer</p>
-        <ul>
-            <li id="mainlang"><a href="">ENG</a>
-            <li id="steplang_1"><a href="">UKR</a></li>
-            <li id="steplang_2"><a href="">RUS</a></li>
-        </ul>
-    
-    </header>
-    
-    
-    
-    
-    <img id="line" src="img/lineblack.png"></img>
-    <div id ="menu"><a id ="about">ABOUT</a><a id ="skills">SKILLS</a><a id="contacts">CONTACTS</a><a id="resume">RESUME</a><div>
-        <img id = "infoblockfon" src="img/blockwhite.png"></img>
-    <div id = "infoblock">
-        <img id ="me" src="img/myphotonorm.png"></img>
-        
-        <a id = "maintext1">
-            <p>Hello, i'm Taras Kukharets. Welcome to my personal site, here you can get some
-        informacion about me, and more else.</p> <br>
-            <p>So, my profession is programming, and you are obviously interested in my person is on this issue. I hope this site will help you get all the necessary information, and if not - contact me in any way convenient for you. In any case, I'm always open to new initiatives and cooperation, and I certainly will look into your proposal.</p><br>
-        
-        
-            <br>
-            <p>Have a nice day!</p>
-            
-            
-        </a>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
- 
-    <footer><img id="linedown" src="img/lineblack.png"></img>
-        <div id="foottext"><a>Created by Taras Kukharets © 2016</a></div></footer>
-    
-    
-    
-    
-    
-    <script>
-        var click=false;
-        $('#steplang_1, #steplang_2').hide();
-        $('ul').on("mouseenter", function(){
-            $('#steplang_1, #steplang_2').show();
-        })
-        $('ul').on("mouseleave", function(){
-            $('#steplang_1, #steplang_2').hide();
-        })
-        $('#menu>a').on("mouseenter", function() {
-            $(this).css("border-style", "dotted").css("border-width","1px").css("border-color","white"); 
-        })
-        $('#menu>a').on("mouseleave", function() {
-            if(click==false){
-            $(this).css("border-style", "none");} 
-        })
-        $('#menu>a').on("click", function() {
-        $(this).css("border-style", "dotted").css("border-width","1px").css("border-color","white");
-        click=true;
-        })
-        $('#skills').on("click",function(){
-            $('#infoblock').html("<p>My skills are avesome<p/>")
-        })
-        $('#contacts').on("click",function(){
-            $('#infoblock').html("<p>On earch<p/>")
-        })
-        $('#resume').on("click",function(){
-            $('#infoblock').html("<p>Try to google it<p/>")
-        })
-        $('#about').on("click",function(){
-            $('#infoblock').html('<img id ="me" src="img/myphotonorm.png">')
-        })
-    </script>
+<header>
+    <p>Taras Kukharets</p>
+    <p id="pdown">multilangue junior developer</p>
+    <ul>
+        <li id="mainlang"><a href="">ENG</a>
+        <li id="steplang_1"><a href="">UKR</a></li>
+        <li id="steplang_2"><a href="">RUS</a></li>
+    </ul>
+</header>
+<img id="line" src="img/lineblack.png"></img>
+<div id="menu">
+    <a id="about">ABOUT</a>
+    <a id="skills">SKILLS</a>
+    <a id="contacts">CONTACTS</a>
+    <a id="resume">RESUME</a>
+    <div>
+        <img id="infoblockfon" src="img/blockwhite.png"></img>
+        <div id="infoblock">
+            <img id="me" src="img/myphotonorm.png"></img>
+            <a id="maintext1">
+                <p>Hello, i'm Taras Kukharets. Welcome to my personal site, here you can get some
+                    informacion about me, and more else.</p> <br>
+                <p>So, my profession is programming, and you are obviously interested in my person is on this issue. I
+                    hope this site will help you get all the necessary information, and if not - contact me in any way
+                    convenient for you. In any case, I'm always open to new initiatives and cooperation, and I certainly
+                    will look into your proposal.</p><br>
+                <p>Have a nice day!</p>
+            </a>
+        </div>
+        <footer>
+            <img id="linedown" src="img/lineblack.png"></img>
+            <div id="foottext">
+                <a>Created by Taras Kukharets © 2016</a>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"
+                integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+                crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>
