@@ -10,7 +10,7 @@ header {
 }
 
 #pdown {
-    margin-top: 0px
+    margin-top: 0px;
 }
 
 ul li a {
@@ -53,6 +53,10 @@ body header p {
 #menu a {
     padding-left: 50px;
     padding-right: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: transparent;
+    text-decoration: none;
 }
 
 #infoblockfon {
@@ -66,7 +70,7 @@ body header p {
     border-left:none;
 }
 
-#infoblock {
+#infoblock  {
     position: absolute;
     margin-top: -523px;
     text-align: center;
@@ -75,6 +79,9 @@ body header p {
     min-width: 765px
 }
 
+#skillblock {
+    position: absolute;
+}
 #infoblock img {
     float: left;
     padding-right: 60px
@@ -82,6 +89,7 @@ body header p {
 
 #infoblock a {
     text-align: left;
+    text-decoration: none;
 }
 
 footer {
@@ -110,3 +118,7 @@ footer {
 
 
 
+td {border:solid;width: 35px;height: 10px;border-color: silver;background-color: white;}
+#colored{background-color: black}
+
+#skilltable {border-spacing: 50px;}
