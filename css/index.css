@@ -79,10 +79,8 @@ body header p {
     min-width: 765px
 }
 
-#skillblock {
-    position: absolute;
-}
-#infoblock img {
+
+#me {
     float: left;
     padding-right: 60px
 }
@@ -119,6 +117,14 @@ footer {
 
 
 td {border:solid;width: 35px;height: 10px;border-color: silver;background-color: white;border-collapse: separate}
-#colored{background-color: black}
+/*#colored{background-color: black}*/
+#javaskill tr th {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#skillblock {
+    position: absolute;
+    max-width:  150px;
+}
 
-#skilltable{border-spacing: 50px;}
+
