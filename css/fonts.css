@@ -4,3 +4,6 @@ ul li a {font:10px "Courier New"; text-decoration:none; color: white;}
 #menu a{font: 20px "Courier New";color:white;font-weight: bold;}
 #infoblock a{font-family: 'Open Sans', sans-serif; color:black; font-weight: 500}
 #foottext a{font:10px "Courier New"; color:white;font-weight: bold;}
+#cs a{font:20px; letter-spacing:2px;color:black;}
+h1{font-family: 'Open Sans', sans-serif;color:black;padding:0;font-size: 30px;}
+h2 {font-family: 'Open Sans', sans-serif;font-size: 20px;color:black;padding:0}

@@ -48,6 +48,7 @@ body header p {
     text-align: center;
     margin-top: -29px;
     min-width: 765px;
+    height: 30px;
 }
 
 #menu a {
@@ -76,7 +77,7 @@ body header p {
     text-align: center;
     margin-left: 120px;
     margin-right: 120px;
-    min-width: 765px
+    min-width: 1024px
 }
 
 
@@ -85,7 +86,7 @@ body header p {
     padding-right: 60px
 }
 
-#infoblock a {
+#maintext1{
     text-align: left;
     text-decoration: none;
 }
@@ -116,15 +117,170 @@ footer {
 
 
 
-td {border:solid;width: 35px;height: 10px;border-color: silver;background-color: white;border-collapse: separate}
+td {border:solid;width: 35px;border-width: 2px;height: 10px;border-color: lightslategray;background-color: white;border-collapse: separate}
 /*#colored{background-color: black}*/
+#jsblock{width: 200px;
+    float:left;
+    padding-right: 30px;
+}
+#htmlblock{width: 200px;
+    padding-right: 30px;
+    float:left;
+}
+#cssblock{width: 200px;
+    
+    float:left;
+    padding-right: 30px;
+}
+#javablock{width: 200px;
+    padding-right: 30px;
+    float:left;
+}
+#linuxblock{width: 200px;
+    padding-right: 30px;
+    float:left;
+}
+#jsskill tr th {
+    text-align: center;
+    padding-bottom: 20px;
+}
 #javaskill tr th {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#htmlskill tr th {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#cssskill tr th {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#linuxskill tr th {
     text-align: center;
     padding-bottom: 20px;
 }
 #skillblock {
     position: absolute;
-    max-width:  150px;
+    min-width: 1024px;
+    visibility: hidden;
+}
+#contactsblock {
+    position: absolute;
+    min-width: 1024px;
+    visibility: hidden;
+}
+#resumeIn {
+    
+   
+    visibility: hidden;
+    
 }
 
 
+#baseinfo {
+    position: absolute;
+text-align: left;
+
+
+}
+#me1 {
+    float:left;
+}
+#head {text-align: left;}
+#cs a {}
+#htmlOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
+#jsOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
+#linuxOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
+#javaOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
+#cssOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
+.slideDown{
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;  
+ 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;    
+ 
+    visibility: visible !important;                     
+}
+ 
+@keyframes slideDown {
+    0% {
+        transform: translateY(-150%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }           
+    100% {
+        transform: translateY(0%);
+    }       
+}
+ 
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    50%{
+        -webkit-transform: translateY(8%);
+    }
+    65%{
+        -webkit-transform: translateY(-4%);
+    }
+    80%{
+        -webkit-transform: translateY(4%);
+    }
+    95%{
+        -webkit-transform: translateY(-2%);
+    }           
+    100% {
+        -webkit-transform: translateY(0%);
+    }   
+}
+.fadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn; 
+ 
+    animation-duration: 0.2s; 
+    -webkit-animation-duration:0.5s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    visibility: visible !important; 
+}
+ 
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;       
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+ 
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;       
+    }
+     
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
