@@ -1,9 +1,11 @@
 body {
-    background: url(../img/fon2.png);
+    max-width: 1980px;
+    background: url(../img/fon2.png )center top fixed no-repeat;
     margin: 0 auto;
     width: 100%;
+    min-width: 1083px;
 }
-
+#resheader {padding-bottom: px;}
 header {
     margin: 0 auto;
 }
@@ -30,7 +32,9 @@ body header p {
     text-align: center;
     margin-top: 25px;
 }
-
+#quickinfo{
+   
+}
 #line {
     margin-top: 30px;
     width: 100%;
@@ -47,6 +51,7 @@ body header p {
     text-align: center;
     margin-top: -29px;
     height: 30px;
+    min-width: 980px;
 }
 
 #menu a {
@@ -61,6 +66,7 @@ body header p {
 
 #infoblockfon,
 #infoblock {
+    min-width: 1083px;
     margin-top: 40px;
     width: 100%;
     min-height: 540px;
@@ -69,7 +75,7 @@ body header p {
 }
 
 #infoblock {
-    min-width: 1024px;
+    min-width: 1083px;
     max-width: 1980px;
 }
 
@@ -169,6 +175,7 @@ td {
 
 #baseinfo{
     max-height: 500px;
+    min-width: 1082px;
     padding-top:20px;
     padding-left: 100px;
     padding-right: 100px

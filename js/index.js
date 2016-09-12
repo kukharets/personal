@@ -61,6 +61,7 @@ $('#contactsBut').on("click", function() {
 })
 $('#resumeBut').on("click", function() {
     $('#infoblock').attr("height","1000px");
+    $('#infoblock').attr("min-width","1082px");
     $('#infoblock').html(r);
     $('#resumeIn').attr("visibility", "visible");
     $('#infoblockfon').attr("src", "img/blockwhitebig.png")
