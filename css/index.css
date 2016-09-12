@@ -2,7 +2,6 @@ body {
     background: url(../img/fon2.png);
     margin: 0 auto;
     width: 100%;
-
 }
 
 header {
@@ -41,7 +40,7 @@ body header p {
     border-color: white;
     min-width: 765px;
     border-right: none;
-    border-left:none;
+    border-left: none;
 }
 
 #menu {
@@ -60,7 +59,8 @@ body header p {
     text-decoration: none;
 }
 
-#infoblockfon {
+#infoblockfon,
+#infoblock {
     margin-top: 40px;
     width: 100%;
     height: 540px;
@@ -68,22 +68,28 @@ body header p {
     border-width: 1px;
     border-color: black;
     border-right: none;
-    border-left:none;
-}
-
-#infoblock  {
+    border-left: none;
     position: absolute;
-    margin-top: -523px;
-    text-align: center;
-    margin-left: 120px;
-    margin-right: 120px;
-    min-width: 1024px
+    
 }
 
+#infoblock {
+    min-width: 1024px;
+    max-width: 1980px;
+}
 
 #me {
     float: left;
     padding-right: 60px
+}
+
+.inblock {
+    padding: 20px
+}
+
+#about {
+    padding-left: 100px;
+    padding-right: 100px
 }
 
 #maintext1{
@@ -114,173 +120,154 @@ footer {
     padding-bottom: 5px
 }
 
-
-
-
-td {border:solid;width: 35px;border-width: 2px;height: 10px;border-color: lightslategray;background-color: white;border-collapse: separate}
-/*#colored{background-color: black}*/
-#jsblock{width: 200px;
-    float:left;
-    padding-right: 30px;
-}
-#htmlblock{width: 200px;
-    padding-right: 30px;
-    float:left;
-}
-#cssblock{width: 200px;
-    
-    float:left;
-    padding-right: 30px;
-}
-#javablock{width: 200px;
-    padding-right: 30px;
-    float:left;
-}
-#linuxblock{width: 200px;
-    padding-right: 30px;
-    float:left;
-}
-#jsskill tr th {
-    text-align: center;
-    padding-bottom: 20px;
-}
-#javaskill tr th {
-    text-align: center;
-    padding-bottom: 20px;
-}
-#htmlskill tr th {
-    text-align: center;
-    padding-bottom: 20px;
-}
-#cssskill tr th {
-    text-align: center;
-    padding-bottom: 20px;
-}
-#linuxskill tr th {
-    text-align: center;
-    padding-bottom: 20px;
-}
 #skillblock {
-    position: absolute;
-    min-width: 1024px;
     visibility: hidden;
 }
+#sblock {
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+}
+td {
+    border: solid;
+    width: 35px;
+    border-width: 2px;
+    height: 10px;
+    border-color: lightslategray;
+    background-color: white;
+    border-collapse: separate
+}
+
+.skills {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 30px;
+    margin-top:-100px;
+    text-align: center;
+}
+
+.skills img {
+    padding-bottom: 20px;
+}
+
+
 #contactsblock {
-    position: absolute;
-    min-width: 1024px;
     visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+#cs {
+    margin-top: 50px;
+    text-align: center;
 }
 #resumeIn {
-    
-   
     visibility: hidden;
     
 }
 
 
-#baseinfo {
-    position: absolute;
-text-align: left;
 
+#baseinfo{
+    max-height: 500px;
+    padding-top:20px;
+    padding-left: 100px;
+    padding-right: 100px
+}
+#resumetext {white-space: normal}
+#me1 {float:left; padding-right: 40px;}
 
+.optionsBlock a {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0
 }
-#me1 {
-    float:left;
-}
-#head {text-align: left;}
-#cs a {}
-#htmlOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
-#jsOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
-#linuxOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
-#javaOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
-#cssOptionBlock a {text-align:center; padding-left:0;padding-right: 0}
-.slideDown{
+
+.slideDown {
     animation-name: slideDown;
-    -webkit-animation-name: slideDown;  
- 
-    animation-duration: 1s; 
+    -webkit-animation-name: slideDown;
+    animation-duration: 1s;
     -webkit-animation-duration: 1s;
- 
-    animation-timing-function: ease;    
-    -webkit-animation-timing-function: ease;    
- 
-    visibility: visible !important;                     
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
 }
- 
+
 @keyframes slideDown {
     0% {
         transform: translateY(-150%);
     }
-    50%{
+    50% {
         transform: translateY(8%);
     }
-    65%{
+    65% {
         transform: translateY(-4%);
     }
-    80%{
+    80% {
         transform: translateY(4%);
     }
-    95%{
+    95% {
         transform: translateY(-2%);
-    }           
+    }
     100% {
         transform: translateY(0%);
-    }       
+    }
 }
- 
+
 @-webkit-keyframes slideDown {
     0% {
         -webkit-transform: translateY(-100%);
     }
-    50%{
+    50% {
         -webkit-transform: translateY(8%);
     }
-    65%{
+    65% {
         -webkit-transform: translateY(-4%);
     }
-    80%{
+    80% {
         -webkit-transform: translateY(4%);
     }
-    95%{
+    95% {
         -webkit-transform: translateY(-2%);
-    }           
+    }
     100% {
         -webkit-transform: translateY(0%);
-    }   
+    }
 }
-.fadeIn{
+
+.fadeIn {
     animation-name: fadeIn;
-    -webkit-animation-name: fadeIn; 
- 
-    animation-duration: 0.2s; 
-    -webkit-animation-duration:0.5s;
- 
-    animation-timing-function: ease-in-out; 
-    -webkit-animation-timing-function: ease-in-out;     
- 
-    visibility: visible !important; 
+    -webkit-animation-name: fadeIn;
+    animation-duration: 0.2s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
 }
- 
+
 @keyframes fadeIn {
     0% {
         transform: scale(0);
-        opacity: 0.0;       
+        opacity: 0.0;
     }
-    
     100% {
         transform: scale(1);
-        opacity: 1; 
-    }       
+        opacity: 1;
+    }
 }
- 
+
 @-webkit-keyframes fadeIn {
     0% {
         -webkit-transform: scale(0);
-        opacity: 0.0;       
+        opacity: 0.0;
     }
-     
     100% {
         -webkit-transform: scale(1);
-        opacity: 1; 
-    }       
+        opacity: 1;
+    }
 }

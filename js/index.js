@@ -40,7 +40,7 @@ $('#menu>a').on("click", function() {
 })
 
 
-$('#skills').on("click", function() {
+$('#skillsBut').on("click", function() {
     $('#infoblock').html(s);
     
     progressNow($('#jsbars td'), 4);
@@ -51,13 +51,13 @@ $('#skills').on("click", function() {
     
     showOptions();
 })
-$('#contacts').on("click", function() {
+$('#contactsBut').on("click", function() {
     
     $('#infoblock').html(c);
     $('#infoblock').attr("text-align", "left");
     $('#contactsblock').attr("visibility", "visible");
 })
-$('#resume').on("click", function() {
+$('#resumeBut').on("click", function() {
     $('#infoblock').html(r);
     $('#resumeIn').attr("visibility", "visible");
 })
@@ -131,7 +131,7 @@ function blinkOne(bar) {
 
 
 
-$('#about').on("click", function() {
+$('#aboutBut').on("click", function() {
     $('#infoblock').html(b)
 })
 
