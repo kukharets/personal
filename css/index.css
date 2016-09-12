@@ -54,7 +54,6 @@ body header p {
     padding-left: 50px;
     padding-right: 50px;
     border-style: dotted;
-    border-width: 1px;
     border-color: transparent;
     text-decoration: none;
 }
@@ -70,7 +69,7 @@ body header p {
 }
 
 #infoblock {
-    min-width: 1024px;
+    min-width: 1112px;
     max-width: 1980px;
 }
 
@@ -109,7 +108,7 @@ footer {
 #linedow img {
     min-height: 30px
 }
-
+#menu a {cursor: pointer}
 #foottext {
     text-align: center;
     margin-top: -30px;

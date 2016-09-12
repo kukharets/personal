@@ -23,6 +23,7 @@ $('ul').on("mouseleave", function() {
     $('#steplang_1, #steplang_2').hide();
 })
 $('#menu>a').on("mouseenter", function() {
+    
     if ($(this).attr("clicked") != 'true') {
         $(this).css("border-color", "white");
     }
