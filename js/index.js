@@ -42,7 +42,8 @@ $('#menu>a').on("click", function() {
 
 $('#skillsBut').on("click", function() {
     $('#infoblock').html(s);
-    
+    $('#infoblockfon').attr("height","540px");
+    $('#infoblock').attr("height","540px");
     progressNow($('#jsbars td'), 4);
     progressNow($('#htmlbars td'), 3);
     progressNow($('#cssbars td'), 2);
@@ -52,14 +53,19 @@ $('#skillsBut').on("click", function() {
     showOptions();
 })
 $('#contactsBut').on("click", function() {
-    
+    $('#infoblockfon').attr("height","540px");
+    $('#infoblock').attr("height","540px");
     $('#infoblock').html(c);
     $('#infoblock').attr("text-align", "left");
     $('#contactsblock').attr("visibility", "visible");
 })
 $('#resumeBut').on("click", function() {
+    $('#infoblock').attr("height","1000px");
     $('#infoblock').html(r);
     $('#resumeIn').attr("visibility", "visible");
+    $('#infoblockfon').attr("src", "img/blockwhitebig.png")
+    $('#infoblockfon').attr("height","1000px");
+    
 })
 function showOptions(){
     
@@ -132,6 +138,8 @@ function blinkOne(bar) {
 
 
 $('#aboutBut').on("click", function() {
+    $('#infoblockfon').attr("height","540px");
+    $('#infoblock').attr("height","540px");
     $('#infoblock').html(b)
 })
 
