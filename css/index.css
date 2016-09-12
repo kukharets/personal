@@ -55,7 +55,7 @@ body header p {
     padding-right: 50px;
     border-style: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: transparent;
     text-decoration: none;
     cursor: pointer;
 }
