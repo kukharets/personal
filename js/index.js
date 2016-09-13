@@ -25,7 +25,9 @@ $('ul').on("mouseleave", function() {
 $('#menu>a').on("mouseenter", function() {
     if ($(this).attr("clicked") != 'true') {
         $(this).css("border-color", "white");
+        
     }
+    $(this).attr("background-color", "white");
 })
 $('#menu>a').on("mouseleave", function() {
     if ($(this).attr("clicked") != 'true') {
@@ -71,23 +73,18 @@ $('#resumeBut').on("click", function() {
 function showOptions(){
     
         setTimeout(function(){
-            console.log('set');
             $('.show0').show();
         },600)
         setTimeout(function(){
-            console.log('set');
             $('.show1').show();
         },1200)
         setTimeout(function(){
-            console.log('set');
             $('.show2').show();
         },1800)
         setTimeout(function(){
-            console.log('set');
             $('.show3').show();
         },2400)
         setTimeout(function(){
-            console.log('set');
             $('.show4').show();
         },3000)
     }
